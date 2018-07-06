@@ -1,0 +1,9 @@
+listview 
+@Override
+            public void onTextChanged(CharSequence cs, int arg1, int arg2, int arg3) {
+                adapter.getFilter().filter(cs);
+            }
+to make listview act as autocomplete
+autocompleteview
+gridview
+spinner - dropdownlist
