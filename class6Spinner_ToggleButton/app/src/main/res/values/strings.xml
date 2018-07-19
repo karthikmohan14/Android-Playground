@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">class6Spinner_ToggleButton</string>
+    <string-array name="color">
+        <item>Red</item>
+        <item>Green</item>
+        <item>Blue</item>
+    </string-array>
+
+</resources>
