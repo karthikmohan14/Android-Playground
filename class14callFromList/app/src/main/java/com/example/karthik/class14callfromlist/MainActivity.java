@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         lv=findViewById(R.id.listv);
         ArrayAdapter<String> ada=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,contacts);
         lv.setAdapter(ada);
