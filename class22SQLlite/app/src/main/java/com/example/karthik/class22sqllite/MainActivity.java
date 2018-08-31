@@ -41,13 +41,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void modVal(View view) {
+        Cursor c =db.rawQuery("Select * from student1 where rollno = '"+eRoll.getText()+"';",null);
+        if(c.moveToFirst()) {
+            db.execSQL("update student1 set name = '" + eName.getText().toString() + "' where rollno = '" + eRoll.getText().toString() + "';");
+        }
     }
 
     public void remVal(View view) {
-        Cursor c =db.rawQuery("Select * from student1 where name = '"+eName.getText()+"';",null);
-        if(c.moveToFirst()){
-            db.execSQL("delete from student1 where name = '"+eName.getText()+"';");
+            Cursor c =db.rawQuery("Select * from student1 where name = '"+eName.getText()+"';",null);
+        if(c.moveToFirst()) {
+            db.execSQL("delete from student1 where name = '" + eName.getText() + "';");
         }
-
     }
 }
