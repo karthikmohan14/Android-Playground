@@ -31,6 +31,7 @@ public class MainActivity extends Activity {
         button.setOnClickListener(new OnClickListener() {
             public void onClick(View v) {
                 new LoadIconTask().execute(R.drawable.painter);
+//                Toast.makeText(MainActivity.this, "whoa", Toast.LENGTH_SHORT).show();
             }
         });
 
