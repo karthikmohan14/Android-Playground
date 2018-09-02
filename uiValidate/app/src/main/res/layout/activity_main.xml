@@ -60,7 +60,7 @@
         android:layout_marginTop="8dp"
         android:text="PHONE:"
         app:layout_constraintBottom_toTopOf="@+id/TVgen2"
-        app:layout_constraintEnd_toStartOf="@+id/ETname"
+        app:layout_constraintEnd_toStartOf="@+id/ETph"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TVrmail" />
@@ -75,7 +75,7 @@
         android:layout_marginTop="8dp"
         android:text="EMAIL :"
         app:layout_constraintBottom_toTopOf="@+id/TVreg4"
-        app:layout_constraintEnd_toStartOf="@+id/ETname"
+        app:layout_constraintEnd_toStartOf="@+id/ETph"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TVreg2" />
@@ -90,7 +90,7 @@
         android:layout_marginTop="8dp"
         android:text="REG NO:"
         app:layout_constraintBottom_toTopOf="@+id/TVrmail"
-        app:layout_constraintEnd_toStartOf="@+id/ETname"
+        app:layout_constraintEnd_toStartOf="@+id/ETph"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TVname2" />
@@ -105,13 +105,13 @@
         android:layout_marginTop="16dp"
         android:text="NAME : "
         app:layout_constraintBottom_toTopOf="@+id/TVreg2"
-        app:layout_constraintEnd_toStartOf="@+id/ETname"
+        app:layout_constraintEnd_toStartOf="@+id/ETph"
         app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/ETname"
+        android:id="@+id/ETph"
         android:layout_width="242dp"
         android:layout_height="38dp"
         android:layout_marginBottom="1dp"
@@ -123,10 +123,10 @@
         app:layout_constraintBottom_toTopOf="@+id/RBfem"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/TVgen2"
-        app:layout_constraintTop_toBottomOf="@+id/ETname4" />
+        app:layout_constraintTop_toBottomOf="@+id/ETemail" />
 
     <EditText
-        android:id="@+id/ETname4"
+        android:id="@+id/ETemail"
         android:layout_width="242dp"
         android:layout_height="38dp"
         android:layout_marginBottom="8dp"
@@ -135,13 +135,13 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/ETname"
+        app:layout_constraintBottom_toTopOf="@+id/ETph"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/TVreg4"
-        app:layout_constraintTop_toBottomOf="@+id/ETname3" />
+        app:layout_constraintTop_toBottomOf="@+id/ETreg" />
 
     <EditText
-        android:id="@+id/ETname3"
+        android:id="@+id/ETreg"
         android:layout_width="242dp"
         android:layout_height="38dp"
         android:layout_marginBottom="8dp"
@@ -150,14 +150,14 @@
         android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/ETname4"
+        app:layout_constraintBottom_toTopOf="@+id/ETemail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/TVreg2"
-        app:layout_constraintTop_toBottomOf="@+id/ETname2" />
+        app:layout_constraintTop_toBottomOf="@+id/ETname" />
 
     <EditText
-        android:id="@+id/ETname2"
+        android:id="@+id/ETname"
         android:layout_width="242dp"
         android:layout_height="38dp"
         android:layout_marginBottom="8dp"
@@ -166,7 +166,7 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/ETname3"
+        app:layout_constraintBottom_toTopOf="@+id/ETreg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/TVname2"
         app:layout_constraintTop_toTopOf="parent" />
@@ -181,7 +181,8 @@
         android:text="female"
         app:layout_constraintBottom_toTopOf="@+id/spinner"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ETname" />
+        app:layout_constraintTop_toBottomOf="@+id/ETph"
+        android:onClick="selfemale"/>
 
     <RadioButton
         android:id="@+id/RBmale"
@@ -193,8 +194,9 @@
         android:text="male"
         app:layout_constraintBottom_toTopOf="@+id/spinner"
         app:layout_constraintEnd_toStartOf="@+id/RBfem"
-        app:layout_constraintTop_toBottomOf="@+id/ETname"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/ETph"
+        app:layout_constraintVertical_bias="0.0"
+        android:onClick="selmale"/>
 
     <Spinner
         android:id="@+id/spinner"
@@ -256,7 +258,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/CBart"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:srcCompat="@mipmap/ic_launcher"
+        android:onClick="changePic"/>
 
     <Button
         android:id="@+id/BTclear"
@@ -269,7 +272,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.889"
-        app:layout_constraintStart_toEndOf="@+id/BTacc" />
+        app:layout_constraintStart_toEndOf="@+id/BTacc"
+        android:onClick="onClear"/>
 
     <Button
         android:id="@+id/BTacc"
@@ -282,6 +286,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        android:onClick="acceptData"/>
 
 </android.support.constraint.ConstraintLayout>
