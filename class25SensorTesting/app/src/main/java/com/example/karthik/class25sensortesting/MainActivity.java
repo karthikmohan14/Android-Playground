@@ -1,4 +1,4 @@
-package com.example.karthik.class26sensors;
+package com.example.karthik.class25sensortesting;
 
 import android.content.Context;
 import android.hardware.Sensor;
@@ -7,24 +7,19 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
-import java.util.List;
-
 public class MainActivity extends AppCompatActivity {
 
-        private SensorManager mSensorManager;
+    private SensorManager mSensorManager;
+    private Sensor mSensorLight;
+    private TextView mTextSensorLight;
+    private TextView mTextSensorProximity;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+//        mTextSensorLight = ();
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-
-        List<Sensor> sensorList = mSensorManager.getSensorList(Sensor.TYPE_ALL);
-        StringBuilder sensorText = new StringBuilder();
-        for (Sensor currentSensor : sensorList){
-            sensorText.append(currentSensor.getName()).append(System.getProperty("line.separator"));
-        }
-        TextView sensorTextView = findViewById(R.id.dispText);
-        sensorTextView.setText(sensorText);
+        mTextSensorProximity = mSensorManager.getDefaultSensor(Sensor.TYPE_PROXIMITY);
+        mSensorLight =
     }
 }
