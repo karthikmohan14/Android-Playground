@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "241325862810",
+    "firebase_url": "https://ase-network.firebaseio.com",
+    "project_id": "ase-network",
+    "storage_bucket": "ase-network.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241325862810:android:a4d55db3caceb3b2",
+        "android_client_info": {
+          "package_name": "com.karthik.socialnet.ase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241325862810-pdil6vt1l94hkjs0j0s6r0ljaqiop92q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.karthik.socialnet.ase",
+            "certificate_hash": "5b3d9f49c960811929540e9286c944a27f58c8cf"
+          }
+        },
+        {
+          "client_id": "241325862810-8rcnl06r14m3f8d667guuat3bf3dkksf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg9bCmvHDhHAvTiVvK7SqUROKjWQKS_PQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241325862810-8rcnl06r14m3f8d667guuat3bf3dkksf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
