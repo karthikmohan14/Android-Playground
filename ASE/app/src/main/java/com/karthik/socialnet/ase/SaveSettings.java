@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 
 /**
- * Created by hussienalrubaye on 11/13/16.
+ * Created by karthik on 10/10/18.
  */
 
 public class SaveSettings {
@@ -13,16 +13,18 @@ public class SaveSettings {
 
     Context context;
     SharedPreferences ShredRef;
-    public SaveSettings(Context context){
+    public  SaveSettings(Context context){
         this.context=context;
-        ShredRef=context.getSharedPreferences("myRef", Context.MODE_PRIVATE);
+        ShredRef=context.getSharedPreferences("myRef",Context.MODE_PRIVATE);
     }
 
     void SaveData(String UserID){
 
         SharedPreferences.Editor editor=ShredRef.edit();
         editor.putString("UserID",UserID);
-         editor.commit();
+
+        editor.commit();
+        LoadData();
     }
 
     void LoadData(){

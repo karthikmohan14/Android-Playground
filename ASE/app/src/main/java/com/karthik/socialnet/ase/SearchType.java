@@ -1,7 +1,7 @@
 package com.karthik.socialnet.ase;
 
 /**
- * Created by hussienalrubaye on 11/13/16.
+ * Created by karthik on 10/10/18.
  */
 
 public class SearchType {

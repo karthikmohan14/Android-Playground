@@ -39,7 +39,7 @@
             android:inputType="textMultiLine"
             android:ems="10"
             android:id="@+id/etPost"
-            android:hint="Write?" />
+            android:hint="What you think?" />
 
 
         <LinearLayout

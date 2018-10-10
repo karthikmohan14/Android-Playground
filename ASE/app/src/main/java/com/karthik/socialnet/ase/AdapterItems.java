@@ -1,20 +1,20 @@
 package com.karthik.socialnet.ase;
 
 /**
- * Created by hussienalrubaye on 11/13/16.
+ * Created by karthik on 10/10/18.
  */
 
 public class AdapterItems {
-    public String tweet_id;
-    public String tweet_text;
-    public String tweet_picture;
-    public String tweet_date;
-    public String user_id;
-    public String first_name;
-    public String picture_path;
+    public   String tweet_id;
+    public  String tweet_text;
+    public  String tweet_picture;
+    public  String tweet_date;
+    public  String user_id;
+    public  String first_name;
+    public  String picture_path;
     //for news details
-    AdapterItems(String tweet_id, String tweet_text, String tweet_picture,
-                 String tweet_date, String user_id, String first_name , String picture_path)
+    AdapterItems(  String tweet_id,  String tweet_text,String tweet_picture,
+                   String tweet_date,String user_id,String first_name ,String picture_path)
     {
         this. tweet_id=tweet_id;
         this. tweet_text=tweet_text;

@@ -7,12 +7,12 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 /**
- * Created by hussienalrubaye on 11/13/16.
+ * Created by karthik on 10/10/18.
  */
 
 public class Operations {
     Context context;
-    public Operations(Context context){
+    public  Operations(Context context){
         this.context=context;
     }
     // this method convert any stream to string
