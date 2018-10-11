@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "922368397377",
+    "firebase_url": "https://ase-times.firebaseio.com",
+    "project_id": "ase-times",
+    "storage_bucket": "ase-times.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922368397377:android:974ebfa07de1ce87",
+        "android_client_info": {
+          "package_name": "com.android.amrita.asetimes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "922368397377-h9j9ukhkkqi96r7ti4r7jrajc6ln73ar.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.amrita.asetimes",
+            "certificate_hash": "5b3d9f49c960811929540e9286c944a27f58c8cf"
+          }
+        },
+        {
+          "client_id": "922368397377-1mmak6uedd00ormjp8j51vk40nhm20o1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCauUQ5MZdHqSsp1XfkdoC8fg5P8-Hn-mk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "922368397377-1mmak6uedd00ormjp8j51vk40nhm20o1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
